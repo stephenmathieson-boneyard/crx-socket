@@ -1,0 +1,22 @@
+{
+  "name": "crx-socket",
+  "repo": "stephenmathieson/crx-socket",
+  "description": "Messaging sockets for Chrome extensions with a usable API",
+  "version": "0.0.0",
+  "keywords": [
+    "chrome",
+    "crx",
+    "messaging"
+  ],
+  "dependencies": {
+    "component/emitter": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/client.js",
+    "lib/server.js"
+  ]
+}
