@@ -13,9 +13,41 @@
 
     $ component install stephenmathieson/crx-socket
 
-## API
+## Example
 
+  **content.js**
 
+```js
+var socket = require('crx-socket');
+var client = socket.createClient('example');
+
+client.on('foo', function (bar) {
+  console.log(bar);
+  // bar{1..100}
+});
+
+for (var i = 0; i < 100; i++) {
+  client.emit('foo', 'bar');
+}
+
+```
+
+  **background.js**
+
+```js
+var socket = require('crx-socket');
+var server = socket.createServer();
+
+server.on('connection', function (port) {
+  console.log('%s connected', port.name);
+});
+
+var n = 0;
+server.on('foo', function (msg, res) {
+  var data = msg + ++n;
+  res.send(data);
+});
+```
 
 ## License
 
