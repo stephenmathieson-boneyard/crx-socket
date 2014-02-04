@@ -3,10 +3,6 @@
 
   Messaging sockets for Chrome extensions with a usable API.
 
-## Status
-
-  WIP - don't use
-
 ## Installation
 
   Install with [component(1)](http://component.io):

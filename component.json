@@ -2,7 +2,7 @@
   "name": "crx-socket",
   "repo": "stephenmathieson/crx-socket",
   "description": "Messaging sockets for Chrome extensions with a usable API",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "keywords": [
     "chrome",
     "crx",
