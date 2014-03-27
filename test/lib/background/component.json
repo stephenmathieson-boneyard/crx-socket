@@ -1,0 +1,6 @@
+{
+  "name": "background",
+  "local": ["crx-socket"],
+  "main": "index.js",
+  "scripts": ["index.js"]
+}

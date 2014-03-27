@@ -1,0 +1,12 @@
+{
+  "name": "crx-socket",
+  "dependencies": {
+    "component/emitter": "*"
+  },
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/client.js",
+    "lib/server.js"
+  ]
+}

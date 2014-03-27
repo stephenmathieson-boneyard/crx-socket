@@ -1,0 +1,9 @@
+{
+  "name": "content",
+  "local": ["crx-socket"],
+  "main": "index.js",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "gjohnson/uuid": "*"
+  }
+}

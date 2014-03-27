@@ -1,0 +1,8 @@
+{
+  "name": "example",
+  "paths": ["lib"],
+  "local": [
+    "background",
+    "content"
+  ]
+}
