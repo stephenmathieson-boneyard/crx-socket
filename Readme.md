@@ -9,6 +9,48 @@
 
     $ component install stephenmathieson/crx-socket
 
+## API
+
+### createServer(name)
+
+  Create a `Server` with `name`.
+
+#### Server#broadcast(data)
+
+  Send a message to all connected ports with `data`.
+
+#### Server#on(name, fn)
+
+  Respond to `name` messages with `fn`.
+
+#### Server#once(name, fn)
+
+  Respond to `name` messages with `fn`, but only once. 
+
+#### Server#off(name, fn)
+
+  Stop `fn` from responding to `name` messages.
+
+### createClient(name)
+
+  Create a `Client` with `name`.
+
+#### Client#emit(name, [data], [fn])
+
+  Emit a `name` message with the given `data`, optionally invoking `fn(response)`.
+
+#### Client#on(name, fn)
+
+  Listen for the given `name` message with `fn`.
+
+#### Client#once(name, fn)
+
+  Listen for the given `name` message, but only fire `fn` once.
+
+#### Client#off(name, [fn])
+
+  Remove the given `fn` listener for `name` messages, or all `name` listeners if `fn` is not provided.
+
 ## Example
 
   Run `make -C test`, then open `test/bundles` as an unpacked extension.
