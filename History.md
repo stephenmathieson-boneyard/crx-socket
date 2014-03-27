@@ -1,4 +1,10 @@
 
+0.2.0 / 2014-03-26
+==================
+
+ * Add a simple example/test extension
+ * client: Add optional callback to `emit`
+
 # Release History
 
 ## 0.1.0
